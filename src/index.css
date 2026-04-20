@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-p5: #c4cbf5;
+  --color-ctoa: #a259ff;
+  --font-work-sans: "Work Sans", sans-serif;
+  --font-space-mono: "Space Mono", monospace;
+}
+
+@layer base {
+  img {
+    @apply block max-w-full;
+  }
+}
+
+@layer components {
+  .h1-space-mono {
+    font-size: 67px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+  .h2-space-mono {
+    font-size: 51px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+  .h3-space-mono {
+    font-size: 38px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+  .h4-space-mono {
+    font-size: 28px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+  .h5-space-mono {
+    font-size: 22px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+  .base-space-mono {
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+  .cap-space-mono {
+    font-size: 12px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
+
+}
+/* @utility h1-space-mono {
+  @apply text-[67px] font-space-mono font-semibold leading-1.4;
+}
+
+@utility h2-space-mono {
+  @apply text-[51px] font-space-mono font-semibold leading-1.4;
+}
+
+@utility h3-space-mono {
+  @apply text-[38px] font-space-mono font-semibold leading-1.4;
+}
+
+@utility h4-space-mono {
+  @apply text-[28px] font-space-mono font-semibold leading-1.4;
+}
+
+@utility h5-space-mono {
+  @apply text-[22px] font-space-mono font-semibold leading-1.4;
+}
+
+@utility base-space-mono {
+  @apply text-[16px] font-space-mono font-semibold leading-1.4;
+}
+
+@utility cap-space-mono {
+  @apply text-[12px] font-space-mono font-semibold leading-1.4;
+}
+
+
+@utility h1-work-sans {
+  @apply text-[67px] font-work-sans font-semibold leading-1.4;
+}
+
+@utility h2-work-sans {
+  @apply text-[51px] font-work-sans font-semibold leading-1.4;
+}
+
+@utility h3-work-sans {
+  @apply text-[38px] font-work-sans font-semibold leading-1.4;
+}
+
+@utility h4-work-sans {
+  @apply text-[28px] font-work-sans font-semibold leading-1.4;
+}
+
+@utility h5-work-sans {
+  @apply text-[22px] font-work-sans font-semibold leading-1.4;
+}
+
+@utility base-work-sans {
+  @apply text-[16px] font-work-sans font-semibold leading-1.4;
+}
+
+@utility cap-work-sans {
+  @apply text-[12px] font-work-sans font-semibold leading-1.4;
+} */
+
+@utility bg-main {
+  background: #2b2b2b;
+}
+
+@utility bg-secondary {
+  background: #3b3b3b;
+}
+
+@utility bg-3 {
+  background: #858584;
+}
+
+@utility bg-call {
+  background: #a259ff;
+}
+
+@utility myhead {
+  @apply text-2xl bg-amber-300 font-bold;
+}
+
