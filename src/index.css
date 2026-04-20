@@ -10,6 +10,9 @@
 }
 
 @layer base {
+  * {
+    color: #fff;
+  }
   img {
     @apply block max-w-full;
   }

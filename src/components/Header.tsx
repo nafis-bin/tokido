@@ -4,8 +4,8 @@ import userLogo from '../assets/User.png'
 const Header = () => {
     return (
         <>
-            <header className="max-w-[1280px] mx-auto">
-                <nav className="flex max-w-[1280px] h-[100px] bg-main px-[50px] items-center justify-between">
+            <header className="w-full h-[100px] px-[50px]">
+                <nav className="flex h-full bg-main items-center justify-between">
                 <div>
                     <img 
                     src={mainLogo} 
