@@ -1,6 +1,5 @@
 import rocketLaunch from '../assets/RocketLaunch.png'
 import heroImage from '../assets/hero-image.png'
-import redHeaded from '../assets/avatars/redheaded.png'
 
 const Hero = () => {
     return (
@@ -65,7 +64,7 @@ const Hero = () => {
                                 Space Walking
                             </p>
                             <div className="flex gap-[12px]">
-                                <img className="size-[24px] rounded-full" src={redHeaded} alt="redheaded avatar" />
+                                <img className="size-[24px] rounded-full" src="/avatars/Mr-Fox.png" alt="redheaded avatar" />
                                 <span className="font-work-sans text-[16px] leading-[140%]">Animakid</span>
                             </div>
                         </div>
