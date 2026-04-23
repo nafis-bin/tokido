@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import TrendingCollection from './components/TrendingCollection'
 import TopCreatorSection from './components/TopCreatorSection'
+import BrowserCategories from './components/BrowserCategories'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <TrendingCollection />
       <TopCreatorSection />
+      <BrowserCategories />
       <footer>
 
       </footer>
