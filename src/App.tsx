@@ -6,6 +6,7 @@ import TopCreatorSection from './components/TopCreatorSection'
 import BrowserCategories from './components/BrowserCategories'
 import DiscoverSection from './components/DiscoverSection'
 import BillboardSection from './components/BillboardSection'
+import StepbyStep from './components/StepbyStep'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BrowserCategories />
       <DiscoverSection />
       <BillboardSection />
+      <StepbyStep />
       <footer>
 
       </footer>
