@@ -68,6 +68,13 @@
     line-height: 1.4;
   }
 
+  .bg-timer {
+    background: rgba(59, 59, 59, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
 
 }
 /* @utility h1-space-mono {
@@ -126,6 +133,10 @@
 @utility cap-work-sans {
   @apply text-[12px] font-work-sans font-semibold leading-1.4;
 } */
+
+@utility gradient-info {
+  background: linear-gradient(to bottom, transparent, #A259FF);
+}
 
 @utility bg-main {
   background: #2b2b2b;

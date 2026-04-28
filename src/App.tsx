@@ -5,6 +5,7 @@ import TrendingCollection from './components/TrendingCollection'
 import TopCreatorSection from './components/TopCreatorSection'
 import BrowserCategories from './components/BrowserCategories'
 import DiscoverSection from './components/DiscoverSection'
+import BillboardSection from './components/BillboardSection'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <TopCreatorSection />
       <BrowserCategories />
       <DiscoverSection />
+      <BillboardSection />
       <footer>
 
       </footer>
