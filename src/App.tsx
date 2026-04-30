@@ -8,6 +8,7 @@ import DiscoverSection from './components/DiscoverSection'
 import BillboardSection from './components/BillboardSection'
 import StepbyStep from './components/StepbyStep'
 import CallToActionSection from './components/CallToActionSection'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,9 +22,7 @@ function App() {
       <BillboardSection />
       <StepbyStep />
       <CallToActionSection />
-      <footer>
-
-      </footer>
+      <Footer />
     </div>
   )
 }

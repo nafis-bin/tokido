@@ -5,6 +5,8 @@
 @theme {
   --color-p5: #c4cbf5;
   --color-ctoa: #a259ff;
+  --color-secondary: #3b3b3b;
+  --color-footerGray: #cccccc;
   --font-work-sans: "Work Sans", sans-serif;
   --font-space-mono: "Space Mono", monospace;
 }
