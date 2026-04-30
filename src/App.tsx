@@ -7,6 +7,7 @@ import BrowserCategories from './components/BrowserCategories'
 import DiscoverSection from './components/DiscoverSection'
 import BillboardSection from './components/BillboardSection'
 import StepbyStep from './components/StepbyStep'
+import CallToActionSection from './components/CallToActionSection'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <DiscoverSection />
       <BillboardSection />
       <StepbyStep />
+      <CallToActionSection />
       <footer>
 
       </footer>
