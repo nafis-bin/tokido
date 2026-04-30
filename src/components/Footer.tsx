@@ -117,6 +117,12 @@ const Footer = () => {
                     </form>
                 </div>
             </div>
+            <footer className="w-[1050px] pb-[40px] h-[33px] pt-[20px] mt-[30px] max-md:mt-[49px] mx-auto border-t
+            max-md:w-[690px] max-sm:w-[315px] border-[#858584]">
+                <p className="text-[12px] font-work-sans text-footerGray leading-[110%]">
+                    Ⓒ NFT Market. Use this template freely.
+                </p>
+            </footer>
         </div>
     )
 }
