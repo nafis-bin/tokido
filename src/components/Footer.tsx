@@ -11,7 +11,7 @@ const Footer = () => {
     }
 
     return (
-        <div className="w-screen h-[334px] bg-secondary max-sm:mt-[40px] pt-[40px] max-md:h-max">
+        <div className="w-screen h-[334px] bg-secondary pt-[40px] max-md:h-max">
             <div className="flex w-[987.41px] h-[196.2px] mx-auto max-md:flex-col max-md:w-[690px] max-md:h-max 
             max-sm:w-[315px] max-md:gap-[30px]">
                 {/* single column */}

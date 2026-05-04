@@ -32,8 +32,8 @@ function Artist() {
 
     return (
         <div className="w-full h-max">
-            <div className="relative w-full h-[370px] max-md:h-[330px]">
-                <div className="w-full h-[320px] max-md:h-[280px]">
+            <div className="relative w-full h-[370px] max-md:h-[330px] max-sm:h-[300px]">
+                <div className="w-full h-[320px] max-md:h-[280px] max-sm:h-[250px]">
                     <img 
                         className="w-full h-full object-fill"
                         src="/artist-hero-img.png" 
@@ -41,17 +41,17 @@ function Artist() {
                     />
                 </div>
                 <div className="absolute w-[1050px] max-md:w-[690px] h-[120px] bottom-0 left-1/2 -translate-x-1/2 
-                rounded-[20px]">
+                rounded-[20px] max-sm:w-[120px]">
                     <img className="size-[120px] rounded-[20px] border-2 border-[#2b2b2b]" 
                     src="/Avatar Placeholder.png" alt="avatar" />
                 </div>
             </div>
 
             <div className="flex flex-col w-[1050px] max-md:w-[690px] h-[377px] mt-[40px] mx-auto
-             max-md:h-[393px] max-md:mt-[30px]">
+             max-md:h-[393px] max-md:mt-[30px] max-sm:w-[315px] max-sm:h-[466px]">
                 <div className="flex items-center justify-between">
-                    <h3 className="w-[510px] max-md:w-[690px] font-work-sans font-semibold text-[51px]
-                    leading-[110%] max-md:text-[38px] max-md:leading-[120%]">
+                    <h3 className="w-[510px] max-md:w-[690px] font-work-sans font-semibold text-[51px] max-sm:w-[315px]
+                    leading-[110%] max-md:text-[38px] max-md:leading-[120%] max-sm:text-[28px] max-sm:leading-[140%]">
                         AnimaKid
                     </h3>
                     {/* only visible to large screens */}
@@ -74,16 +74,17 @@ function Artist() {
                 </div>
                 
                 {/* only visible to medium to small screens */}
-                <div className="hidden justify-between w-[351px] h-[60px] mt-[30px] max-md:flex">
+                <div className="hidden justify-between w-[351px] h-[60px] mt-[30px] max-md:flex
+                max-sm:w-[315px] max-sm:h-[140px] max-sm:flex-col max-sm:gap-[20px]">
                     <button className="flex items-center justify-center gap-3 w-[186px] h-full
-                        bg-ctoa rounded-[20px]">
+                        bg-ctoa rounded-[20px] max-sm:w-[315px] max-sm:h-[60px]">
                         <img className="size-[20px]" src="/copy.png" alt="copy icon" />
                         <p className="font-work-sans font-semibold text-[16px] leading-[140%]">
                             0xc0E3...B79C
                         </p>
                     </button>
                     <button className="flex gap-3 items-center justify-center w-[145px] h-full
-                    outline-2 outline-offset-[-2px] outline-ctoa rounded-[20px]">
+                    outline-2 outline-offset-[-2px] outline-ctoa rounded-[20px] max-sm:w-[315px] max-sm:h-[60px]">
                         <img className="size-[20px]" src="/plus.png" alt="plus icon" />
                         <p className="font-work-sans font-semibold text-[16px] leading-[140%]">
                             Follow
@@ -92,8 +93,9 @@ function Artist() {
                 </div>
 
                 
-                <div className="flex gap-[20px] w-[510px] h-[74px] max-md:h-[57px] mt-[30px]">
-                    <div className="flex flex-col w-[156.67px] h-full">
+                <div className="flex gap-[20px] w-[510px] h-[74px] max-md:h-[57px] mt-[30px]
+                max-sm:w-[315px]">
+                    <div className="flex flex-col w-[156.67px] h-full max-sm:w-[91.67px]">
                         <p className="font-space-mono text-[28px] leading-[140%] max-md:text-[22px] max-md:leading-[160%] font-bold">
                             250k+
                         </p>
@@ -101,7 +103,7 @@ function Artist() {
                             Volume
                         </p>
                     </div>
-                    <div className="flex flex-col w-[156.67px] h-full">
+                    <div className="flex flex-col w-[156.67px] h-full max-sm:w-[91.67px]">
                         <p className="font-space-mono text-[28px] leading-[140%] max-md:text-[22px] max-md:leading-[160%] font-bold">
                             50+
                         </p>
@@ -109,7 +111,7 @@ function Artist() {
                             NFTs Sold
                         </p>
                     </div>
-                    <div className="flex flex-col w-[156.67px] h-full">
+                    <div className="flex flex-col w-[156.67px] h-full max-sm:w-[91.67px]">
                         <p className="font-space-mono text-[28px] leading-[140%] max-md:text-[22px] max-md:leading-[160%] font-bold">
                             3000+
                         </p>
@@ -119,7 +121,7 @@ function Artist() {
                     </div>
                 </div>
             
-                <div className="flex mt-[30px] w-[599px] h-[80px] flex-col gap-[10px] max-md:w-[690px] max-md:h-[54px]">
+                <div className="flex mt-[30px] w-[599px] h-[80px] flex-col gap-[10px] max-md:w-[690px] max-md:h-[54px] max-sm:w-[315px]">
                     <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]
                     max-md:text-[16px] max-md:leading-[140%] max-md:font-normal">
                         Bio
@@ -129,7 +131,7 @@ function Artist() {
                     </p>
                 </div>
 
-                <div className="flex flex-col mt-[30px] w-[599px] h-[77px] gap-[10px] max-md:w-[690px] max-md:h-[56px]">
+                <div className="flex flex-col mt-[30px] w-[599px] h-[77px] gap-[10px] max-md:w-[690px] max-md:h-[56px] max-sm:w-[315px]">
                     <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]
                     max-md:text-[16px] max-md:leading-[140%] max-md:font-normal">
                         Links
@@ -160,20 +162,20 @@ function Artist() {
             </div>
 
             <div className="w-full h-[70px] border-t-1 border-[#3b3b3b] mt-[40px] max-md:mt-[30px]">
-                <div className="flex w-[1050px] max-md:w-[680px] h-[60px] mx-auto mt-[10px]">
+                <div className="flex w-[1050px] max-md:w-[680px] h-[60px] mx-auto mt-[10px] max-sm:w-[315px]">
                     {['created', 'owned', 'collection'].map((tab, i) => (
                         <div key={i} 
                             onClick={() => setActiveTab(tab)}
                             className={clsx(`flex w-[350px] items-center justify-center gap-4 h-full cursor-pointer
-                                max-md:w-[226.67px]`, 
+                                max-md:w-[226.67px] max-sm:w-[105px]`, 
                             activeTab === tab && `border-b-2 border-offset-[-2px] border-[#858584]`)}>
                             <p className={clsx(`capitalize font-work-sans font-semibold text-[22px] leading-[140%] text-[#858584]
                             max-md:text-[16px] max-md:font-semibold max-md:leading-[140%]`, 
                                 activeTab === tab && `text-white`)}>
                                 {tab}
                             </p>
-                            <div className={clsx(`rounded-[20px] px-[10px] py-[5px] bg-[#3b3b3b]`, 
-                                activeTab === tab && `bg-[#858584]`)}>
+                            <div className={clsx(`hidden rounded-[20px] px-[10px] py-[5px] bg-[#3b3b3b]`, 
+                                activeTab === tab && `bg-[#858584] sm:block`)}>
                                 <p className="font-work-sans text-[16px] leading-[140%] max-md:text-[12px] max-md:leading-[110%]">
                                     {data?.length}
                                 </p>
@@ -183,10 +185,10 @@ function Artist() {
                 </div>
             </div>
 
-            <div className="w-full h-[1627px] bg-[#3b3b3b] py-[80px]">
+            <div className="w-full h-[1627px] bg-[#3b3b3b] py-[80px] max-sm:h-[1426px] border-b-2 border-offset-[-2px] border-[#2b2b2b]">
                 {/* cards */}
                 <div className="grid grid-cols-3 gap-[30px] w-[1050px] h-[1467px] mx-auto overflow-hidden
-                max-md:w-[690px] max-md:grid-cols-2">
+                max-md:w-[690px] max-md:grid-cols-2 max-sm:h-[1266px] max-sm:grid-cols-1 max-sm:w-[315px]">
                     {/* loading state */}
                     {isLoading && (
                         <div className="text-[48px] text-red-800">
