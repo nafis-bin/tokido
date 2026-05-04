@@ -109,7 +109,7 @@ const Footer = () => {
                         >
                             <img 
                             className="size-5"
-                            src="mail-icon.png" alt="mail icon" />
+                            src="/mail-icon.png" alt="mail icon" />
                             <p className="font-work-sans text-[16px] leading-[140%] font-semibold">
                                 Subscribe
                             </p>
