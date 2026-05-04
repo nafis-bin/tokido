@@ -1,0 +1,242 @@
+{
+    "notes": [
+        {
+            "id": 1,
+            "content": "html is easy",
+            "important": true
+        },
+        {
+            "id": 2,
+            "content": "css is bad",
+            "important": false
+        },
+        {
+            "id": 3,
+            "content": "javascript no good",
+            "important": true
+        }
+    ],
+    "owned": [
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/spaceship.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        }
+    ],
+    "collection": [
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/crypto-city.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        }
+    ],
+    "created": [
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        },
+        {
+            "imgSrc": "/monkey-d-luffy.png",
+            "artist": "AnimaKid",
+            "artistIcon": "/avatars/Robotica.png",
+            "title": "Distant Galaxy",
+            "price": 1.63,
+            "bid": 0.33
+        }
+    ]
+    
+}
