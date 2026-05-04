@@ -13,7 +13,7 @@ const CallToActionSection = () => {
     }
 
     return (
-        <div className="flex items-center gap-[80px] max-md:gap-[30px] w-[1050px] h-[430px] mt-[120px] max-md:w-[690px] max-md:h-[360px]
+        <div className="flex items-center gap-[80px] max-md:gap-[30px] w-[1050px] h-[430px] mt-[120px] mb-[80px] max-md:w-[690px] max-md:h-[360px]
         rounded-[20px] p-[60px] bg-[#3b3b3b] mx-auto max-md:px-[30px] max-md:py-[40px] max-md:mt-[80px] max-sm:w-[315px] max-sm:h-[565px]
         max-sm:p-0 max-sm:flex-col max-sm:bg-main">
             <img 

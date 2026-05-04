@@ -5,6 +5,9 @@ export const Route = createFileRoute('/posts/')({
 })
 
 function RouteComponent() {
-console.log('hi there')
-  return <div className="text-red-800">Hello "/posts/"!</div>
+  return (
+    <div>
+      
+    </div>
+  )
 }

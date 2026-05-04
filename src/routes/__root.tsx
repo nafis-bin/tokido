@@ -1,6 +1,8 @@
-import * as React from 'react'
+// import * as React from 'react'
 import { Outlet, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -8,9 +10,11 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <React.Fragment>
+    <div className="bg-main">
+      <Header />
       <Outlet />
 	    <TanStackRouterDevtools />
-    </React.Fragment>
+      <Footer />
+    </div>
   )
 }

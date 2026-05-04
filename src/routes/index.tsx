@@ -1,4 +1,3 @@
-import Header from '../components/Header'
 import Hero from '../components/Hero'
 import TrendingCollection from '../components/TrendingCollection'
 import TopCreatorSection from '../components/TopCreatorSection'
@@ -7,7 +6,6 @@ import DiscoverSection from '../components/DiscoverSection'
 import BillboardSection from '../components/BillboardSection'
 import StepbyStep from '../components/StepbyStep'
 import CallToActionSection from '../components/CallToActionSection'
-import Footer from '../components/Footer'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -17,7 +15,6 @@ export const Route = createFileRoute('/')({
 function Index() {
 	return (
 		<div className="bg-main">
-			<Header />
 			<Hero />
 			<TrendingCollection />
 			<TopCreatorSection />
@@ -26,7 +23,6 @@ function Index() {
 			<BillboardSection />
 			<StepbyStep />
 			<CallToActionSection />
-			<Footer />
 		</div>
 
 	)
