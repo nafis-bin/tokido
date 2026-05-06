@@ -3,19 +3,13 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import ArtCard from '../../components/ArtCard'
 import { useQuery } from '@tanstack/react-query'
+import type { Art } from '../../utilities'
 
 export const Route = createFileRoute('/artists/$artistId')({
   component: Artist,
 })
 
-export type Art = {
-    imgSrc: string,
-    artist: string,
-    artistIcon: string,
-    title: string,
-    price: number,
-    bid: number
-}
+
 
 function Artist() {
     const [activeTab, setActiveTab] = useState('created')
@@ -210,6 +204,7 @@ function Artist() {
                             title={card.title}
                             price={card.price}
                             bid={card.bid}
+                            mode="dark"
                         />
                     ))}
                 </div>

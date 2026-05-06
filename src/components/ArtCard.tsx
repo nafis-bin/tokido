@@ -1,8 +1,15 @@
-import type { Art } from "../routes/artists/$artistId"
+import type { Art } from "../utilities"
+import clsx from "clsx"
 
-const ArtCard = ({ imgSrc, artist, title, price, bid, artistIcon }: Art) => {
+type ArtCardType = Art & {
+    mode: 'light' | 'dark'
+}
+
+const ArtCard = ({ imgSrc, artist, title, price, bid, artistIcon, mode }: ArtCardType) => {
     return (
-        <div className="w-[330px] h-[469px] rounded-[20px] bg-[#2b2b2b] max-sm:w-[315px] max-sm:h-[402px]">
+        <div className={clsx(`w-[330px] h-[469px] rounded-[20px] bg-[#2b2b2b] max-sm:w-[315px] max-sm:h-[402px]`,
+           mode === 'light' && `bg-[#3b3b3b]`
+        )}>
             <img 
             src={imgSrc}
             className="w-full h-[295px] rounded-t-[20px] object-fill max-sm:h-[238px]" 

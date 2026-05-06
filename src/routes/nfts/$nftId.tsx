@@ -1,5 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import TimerBid from '../../components/TimerBid'
+import { useQuery } from '@tanstack/react-query'
+import ArtCard from '../../components/ArtCard'
+import type { Art } from '../../utilities'
 
 export const Route = createFileRoute('/nfts/$nftId')({
   component: NftPage,
@@ -7,30 +10,18 @@ export const Route = createFileRoute('/nfts/$nftId')({
 
 function NftPage() {
     const { nftId } = Route.useParams()
-    let now = new Date().getTime()
-    const end = new Date("2026-05-10").getTime()
-    let diffMili = end - now
-
-    let timerId = 1;
-    timerId = setInterval(() => {
-        now = new Date().getTime()
-        diffMili = end - now
-
-        const hours = Math.floor(diffMili / (1000 * 60 * 60))
-        const minutes = Math.floor((diffMili % (1000 * 60 * 60)) / (1000 * 60))
-        const seconds = Math.floor((diffMili % (1000 * 60)) / 1000)
-        if (diffMili <= 0) {
-            clearInterval(timerId)
+    const { data, isLoading, isError} = useQuery<Art[]>({
+        queryKey: ['nft', nftId],
+        queryFn: async () => {
+            const res = await fetch('http://localhost:3001/created')
+            if (!res.ok) throw new Error('some shit happened')
+            return res.json()
         }
-
-        console.table({
-            hours, minutes, seconds
-        })
-
-    }, 1000)
+    })
+    const end = new Date("2026-05-10").getTime()
 
     return (
-        <div className="w-full h-max">
+        <div className="w-full h-max bg-[#2b2b2b]">
             <div className="w-full h-[560px]">
                 <img 
                     className="w-full h-full object-cover"
@@ -39,7 +30,7 @@ function NftPage() {
                 />
             </div>
 
-            <div className="flex w-[1050px] h-max gap-[150px] mx-auto mt-[40px]">
+            <div className="flex w-[1050px] h-max gap-[150px] mx-auto my-[40px]">
                 <div className="w-[605px] h-max">
                     <div className="flex flex-col gap-[10px]">
                         <p className="font-work-sans font-semibold text-[51px] leading-[110%]">
@@ -127,7 +118,52 @@ function NftPage() {
                    </div>
 
                 </div>
-                <TimerBid time={"08:34:53"} />
+                <TimerBid deadline={end} />
+            </div>
+
+            <div className="w-[1050px] h-max mx-auto my-[80px]">
+                <div className="flex justify-between">
+                    <p className="font-work-sans font-semibold text-[38px] leading-[120%]">
+                        More from this Artist
+                    </p>
+                    <button className="w-[267px] h-[60px] flex gap-3 items-center justify-center rounded-[20px]
+                    outline-2 outline-offset-[-2px] outline-ctoa">
+                        <img src="/arrow-right.png" alt="right arrow" className="size-[20px]" />
+                        <span className="font-work-sans font-semibold text-[16px] leading-[140%]">
+                            Go to artist page
+                        </span>
+                    </button>
+                </div>
+
+
+                <div className="grid grid-cols-3 gap-[30px] w-[1050px] h-[1527px] mx-auto overflow-hidden
+                max-md:w-[690px] max-md:grid-cols-2 max-sm:h-[1266px] max-sm:grid-cols-1 max-sm:w-[315px]
+               mt-[60px] gap-y-[60px]">
+                    {/* loading state */}
+                    {isLoading && (
+                        <div className="text-[48px] text-red-800">
+                            Loading...
+                        </div>
+                    )}
+                    {isError && (
+                        <div className="text-[48px] text-red-800">
+                            Type shi
+                        </div>
+                    )}
+                    {/* single card */}
+                    {data && data.map((card, i) => (
+                        <ArtCard 
+                            key={i}
+                            artist={card.artist}
+                            imgSrc={card.imgSrc} 
+                            artistIcon={card.artistIcon}
+                            title={card.title}
+                            price={card.price}
+                            bid={card.bid}
+                            mode="light"
+                        />
+                    ))}
+                </div>
             </div>
 
         </div>
