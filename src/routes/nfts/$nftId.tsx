@@ -22,7 +22,7 @@ function NftPage() {
 
     return (
         <div className="w-full h-max bg-[#2b2b2b]">
-            <div className="w-full h-[560px]">
+            <div className="w-full h-[560px] max-md:h-[420px] max-sm:w-[320px]">
                 <img 
                     className="w-full h-full object-cover"
                     src="/nft-hero-image.png" 
@@ -30,38 +30,45 @@ function NftPage() {
                 />
             </div>
 
-            <div className="flex w-[1050px] h-max gap-[150px] mx-auto my-[40px]">
-                <div className="w-[605px] h-max">
+            <div className="flex w-[1050px] h-max gap-[150px] mx-auto my-[40px]
+            max-md:w-[690px] max-md:gap-[30px]">
+                <div className="w-[605px] h-max max-md:w-[365px]">
                     <div className="flex flex-col gap-[10px]">
-                        <p className="font-work-sans font-semibold text-[51px] leading-[110%]">
+                        <p className="font-work-sans font-semibold text-[51px] leading-[110%]
+                        max-md:text-[38px] max-md:leading-[120%]">
                             The Orbitians
                         </p>
 
-                        <p className="font-work-sans text-[#858584] text-[22px] leading-[160%]">
+                        <p className="font-work-sans text-[#858584] text-[22px] leading-[160%]
+                        max-md:text-[16px] max-md:leading-[140%]">
                             Minted on Sep 30, 2022
                         </p>
                     </div>
 
                     <div className="flex flex-col gap-[10px] mt-[30px]">
-                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]">
+                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]
+                        max-md:text-[16px] max-md:leading-[140%] max-md:font-normal">
                             Created By
                         </p>
-                        <div className="flex gap-3 h-[31px] items-center">
+                        <div className="flex gap-3 h-[31px] max-md:h-[24px] items-center">
                             <img 
                             className="size-[24px]"
                             src="/avatars/Robotica.png" alt="icon" />
-                            <p className="font-work-sans text-[22px] font-semibold leading-[140%]">
+                            <p className="font-work-sans text-[22px] font-semibold leading-[140%]
+                            max-md:text-[16px] max-md:leading-[140%]">
                                 Orbitian
                             </p>
                         </div>
                     </div>
                     
                     {/* description */}
-                    <div className="flex flex-col gap-[10px] w-[605px] h-max mt-[30px]">
-                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]">
+                    <div className="flex flex-col gap-[10px] w-[605px] h-max mt-[30px] max-md:w-[365px]">
+                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]
+                        max-md:text-[16px] max-md:leading-[140%] max-md:font-normal">
                             Description
                         </p>
-                        <p className="font-work-sans text-[22px] leading-[160%]">
+                        <p className="font-work-sans text-[22px] leading-[160%]
+                        max-md:text-[16px] max-md:leading-[140%]">
                             The Orbitians <br />
                             is a collection of 10,000 unique NFTs on the Ethereum blockchain, <br /><br />
                             There are all sorts of beings in the NFT Universe. The most advanced and
@@ -79,22 +86,25 @@ function NftPage() {
 
                     {/* details */}
                     <div className="flex flex-col gap-[10px] mt-[30px]">
-                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]">
+                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]
+                        max-md:text-[16px] max-md:leading-[140%]">
                             Details
                         </p>
-                        <div className="flex gap-[10px] items-center h-[35px]">
+                        <div className="flex gap-[10px] items-center h-[35px] max-md:h-[24px]">
                             <img 
-                            className="size-[32px]"
+                            className="size-[32px] max-md:size-[24px]"
                             src="/globe-logo.png" alt="globe logo" />
-                            <span className="font-work-sans text-[22px] leading-[160%]">
+                            <span className="font-work-sans text-[22px] leading-[160%]
+                            max-md:text-[16px] max-md:leading-[140%]">
                                 View on Etherscan
                             </span>
                         </div>
-                        <div className="flex gap-[10px] items-center h-[35px]">
+                        <div className="flex gap-[10px] items-center h-[35px] max-md:h-[24px]">
                             <img 
-                            className="size-[32px]"
+                            className="size-[32px] max-md:size-[24px]"
                             src="/globe-logo.png" alt="globe logo" />
-                            <span className="font-work-sans text-[22px] leading-[160%]">
+                            <span className="font-work-sans text-[22px] leading-[160%]
+                            max-md:text-[16px] max-md:leading-[140%]">
                                 View on Original
                             </span>
                         </div>
@@ -102,14 +112,15 @@ function NftPage() {
 
                    {/* tags section */}
                    <div className="flex flex-col gap-[20px] mt-[30px]">
-                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]">
+                        <p className="font-space-mono font-bold text-[22px] leading-[160%] text-[#858584]
+                        max-md:text-[16px] max-md:leading-[140%]">
                             Tags
                         </p>
-                        <div className="flex gap-[20px] w-[605px]">
+                        <div className="flex gap-[20px] w-[605px] max-md:flex-col max-md:w-[365px]">
                             {['Animation', 'Illustration', 'Moon', 'Moon'].map((tag, i) => (
                                 <a key={i} href="#">
-                                    <div className="px-[30px] py-[12px] text-[16px] leading-[140%] font-semibold
-                                    font-work-sans bg-[#3b3b3b] rounded-[20px]">
+                                    <div className="px-[30px] py-[12px] text-[16px] leading-[140%] font-semibold h-[46px]
+                                    font-work-sans bg-[#3b3b3b] rounded-[20px] max-md:w-max uppercase">
                                         {tag}
                                     </div>
                                 </a>
@@ -121,9 +132,12 @@ function NftPage() {
                 <TimerBid deadline={end} />
             </div>
 
-            <div className="w-[1050px] h-max mx-auto my-[80px]">
+            <div className="w-[1050px] h-max mx-auto my-[80px] max-md:w-[690px] max-md:my-[40px]">
+
+                {/* title  */}
                 <div className="flex justify-between">
-                    <p className="font-work-sans font-semibold text-[38px] leading-[120%]">
+                    <p className="font-work-sans font-semibold text-[38px] leading-[120%]
+                    max-md:text-[28px] max-md:leading-[140%]">
                         More from this Artist
                     </p>
                     <button className="w-[267px] h-[60px] flex gap-3 items-center justify-center rounded-[20px]
