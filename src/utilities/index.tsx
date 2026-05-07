@@ -13,6 +13,8 @@ export type Art = {
     bid: number
 }
 
+export type MarketPlaceTab = 'NFTs' | 'Collections'
+
 export function parseDeadline(deadline: number): Clock {
     const now = Date.now()
     const diffMili = deadline - now
