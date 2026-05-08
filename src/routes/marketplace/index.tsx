@@ -25,20 +25,24 @@ function MarketPlace() {
         <div className="w-full h-max">
             
             {/* search section */}
-            <div className="flex flex-col gap-[30px] w-[1050px] h-[191px] mx-auto my-[80px]">
+            <div className="flex flex-col gap-[30px] w-[1050px] h-[191px] mx-auto my-[80px]
+            max-md:w-[680px] max-md:h-[168px] max-md:my-[60px]">
                 <div className="flex flex-col gap-[10px]">
-                    <p className="font-work-sans font-semibold text-[51px] leading-[110%]">
+                    <p className="font-work-sans font-semibold text-[51px] leading-[110%]
+                    max-md:text-[38px] max-md:leading-[120%]">
                         Browse Marketplace
                     </p>
-                    <p className="font-work-sans text-[22px] leading-[160%]">
+                    <p className="font-work-sans text-[22px] leading-[160%]
+                    max-md:text-[16px] max-md:leading-[140%]">
                         Browse through more than 50k NFTs on the NFT Marketplace.
                     </p>
                 </div>
 
                 {/* seach bar */}
-                <div className="flex gap-[26px] items-center w-[1050px] h-[60px] rounded-[20px] outline-1 outline-[#3b3b3b] px-[20px]">
+                <div className="flex gap-[26px] items-center w-[1050px] h-[60px] rounded-[20px] outline-1 outline-[#3b3b3b] px-[20px]
+                max-md:w-[680px]">
                     <input 
-                        className="w-[960px] h-[22px] outline-none"
+                        className="w-[960px] h-[22px] outline-none text-[16px] leading-[140%] max-md:w-[590px]"
                         placeholder="Search your favorite NFTs"
                         type="text" 
                     />
@@ -51,7 +55,7 @@ function MarketPlace() {
 
             {/* tab section */}
             <div className="w-full h-[70px] border-t border-[#3b3b3b]">
-                <div className="flex w-[1050px] h-[60px] mx-auto mt-[10px]">
+                <div className="flex w-[1050px] h-[60px] mx-auto mt-[10px] max-md:w-[680px]">
                     {['NFTs', 'Collections'].map((bar, i) => (
                         <button 
                             key={i}
@@ -61,7 +65,7 @@ function MarketPlace() {
                         >
                             <div className="flex items-center justify-center gap-[16px]">
                                 <p className={clsx(`text-[22px] leading-[140%] font-semibold font-work-sans
-                                     text-[#858584]`, tab === bar && `text-white`)}>
+                                     text-[#858584] max-md:text-[16px]`, tab === bar && `text-white`)}>
                                     {bar}
                                 </p>
                                 <p className={clsx(`px-[10px] py-[5px] font-space-mono text-[16px] leading-[140%]
@@ -77,7 +81,8 @@ function MarketPlace() {
             {/* cards section */}
             <div className="w-full h-max bg-secondary shadow-[inset_0_-2px_0_0_#2b2b2b]">
                 {/* cards container */}
-                <div className="grid grid-cols-3 gap-[30px] w-[1050px] py-[60px] mx-auto">
+                <div className="grid grid-cols-3 gap-[30px] w-[1050px] py-[60px] mx-auto
+                max-md:w-[680px] max-md:gap-[20px] max-md:grid-cols-2">
                     {isError && (
                         <div className="text-[48px] text-red-700">
                             type shi
