@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as MarketplaceIndexRouteImport } from './routes/marketplace/index'
+import { Route as ArtistsIndexRouteImport } from './routes/artists/index'
 import { Route as NftsNftIdRouteImport } from './routes/nfts/$nftId'
 import { Route as ArtistsArtistIdRouteImport } from './routes/artists/$artistId'
 
@@ -22,6 +23,11 @@ const IndexRoute = IndexRouteImport.update({
 const MarketplaceIndexRoute = MarketplaceIndexRouteImport.update({
   id: '/marketplace/',
   path: '/marketplace/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArtistsIndexRoute = ArtistsIndexRouteImport.update({
+  id: '/artists/',
+  path: '/artists/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NftsNftIdRoute = NftsNftIdRouteImport.update({
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/artists/$artistId': typeof ArtistsArtistIdRoute
   '/nfts/$nftId': typeof NftsNftIdRoute
+  '/artists/': typeof ArtistsIndexRoute
   '/marketplace/': typeof MarketplaceIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/artists/$artistId': typeof ArtistsArtistIdRoute
   '/nfts/$nftId': typeof NftsNftIdRoute
+  '/artists': typeof ArtistsIndexRoute
   '/marketplace': typeof MarketplaceIndexRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,33 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/artists/$artistId': typeof ArtistsArtistIdRoute
   '/nfts/$nftId': typeof NftsNftIdRoute
+  '/artists/': typeof ArtistsIndexRoute
   '/marketplace/': typeof MarketplaceIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/artists/$artistId' | '/nfts/$nftId' | '/marketplace/'
+  fullPaths:
+    | '/'
+    | '/artists/$artistId'
+    | '/nfts/$nftId'
+    | '/artists/'
+    | '/marketplace/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/artists/$artistId' | '/nfts/$nftId' | '/marketplace'
-  id: '__root__' | '/' | '/artists/$artistId' | '/nfts/$nftId' | '/marketplace/'
+  to: '/' | '/artists/$artistId' | '/nfts/$nftId' | '/artists' | '/marketplace'
+  id:
+    | '__root__'
+    | '/'
+    | '/artists/$artistId'
+    | '/nfts/$nftId'
+    | '/artists/'
+    | '/marketplace/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArtistsArtistIdRoute: typeof ArtistsArtistIdRoute
   NftsNftIdRoute: typeof NftsNftIdRoute
+  ArtistsIndexRoute: typeof ArtistsIndexRoute
   MarketplaceIndexRoute: typeof MarketplaceIndexRoute
 }
 
@@ -83,6 +104,13 @@ declare module '@tanstack/react-router' {
       path: '/marketplace'
       fullPath: '/marketplace/'
       preLoaderRoute: typeof MarketplaceIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/artists/': {
+      id: '/artists/'
+      path: '/artists'
+      fullPath: '/artists/'
+      preLoaderRoute: typeof ArtistsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nfts/$nftId': {
@@ -106,6 +134,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArtistsArtistIdRoute: ArtistsArtistIdRoute,
   NftsNftIdRoute: NftsNftIdRoute,
+  ArtistsIndexRoute: ArtistsIndexRoute,
   MarketplaceIndexRoute: MarketplaceIndexRoute,
 }
 export const routeTree = rootRouteImport
