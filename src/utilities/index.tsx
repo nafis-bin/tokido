@@ -1,3 +1,11 @@
+export type ArtistProfile = {
+    artist: string,
+    imgSrc: string,
+    change: string,
+    sold: number,
+    volume: number
+}
+
 export type Clock = {
     hours: string,
     minutes: string,
