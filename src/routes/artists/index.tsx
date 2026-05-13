@@ -102,7 +102,7 @@ function Artists() {
                             </p>
                             <img 
                                 className="hidden size-[60px] rounded-full max-md:size-[24px] md:block"
-                                src="/avatars/BlueWhale.png" 
+                                src={person.imgSrc} 
                                 alt="blue whale" 
                             />
                             <p className="hidden font-work-sans font-semibold text-[22px] leading-[140%] md:block">
@@ -112,7 +112,7 @@ function Artists() {
                             <div className="hidden gap-3 w-[240px] max-md:flex items-center">
                                 <img 
                                     className="size-[24px]"
-                                    src="/avatars/BlueWhale.png" 
+                                    src={person.imgSrc} 
                                     alt="blue whale" 
                                 />
                                 <p className="font-work-sans font-semibold text-[22px] leading-[140%]">
